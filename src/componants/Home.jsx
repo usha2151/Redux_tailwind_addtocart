@@ -105,25 +105,25 @@ useEffect(()=>{
     })
   }
 
-
-
 <div className='max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mt-4'>
+
+
 <div className="grid grid-cols-2 px-4 pt-3 pb-4">
   <p className='text-lg font-semibold'>Apply coupon</p>
   <p className='text-lg font-semibold text-end'>xdfc354</p>
 </div>
-</div>
 
-<div className='max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mt-4'>
+
+
 <div className="grid grid-cols-2 px-4 pt-3 pb-4">
   <p className='text-lg font-semibold'>Payable amount</p>
   <p className='text-lg font-semibold text-end'>Rs. {prise}</p>
 </div>
+
+
+<button class="bg-gradient-to-r mt-5 ml-64 mb-6 from-blue-400 to-indigo-400 hover:from-indigo-400 hover:to-blue-400   text-white font-semibold py-2 px-4 rounded">Buy Now</button>
+
 </div>
-
-<button class="bg-gradient-to-r mt-5 ml-72 from-blue-400 to-indigo-400 hover:from-indigo-400 hover:to-blue-400   text-white font-semibold py-2 px-4 rounded">Buy Now</button>
-
-
   </div>
 
 
