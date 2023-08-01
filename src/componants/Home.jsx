@@ -70,40 +70,44 @@ useEffect(()=>{
   <div class="col-span-4">
   <p className='text-start text-2xl mb-4 font-sans font-bolder'>Save cart</p>
   {
-    getdata.map((e)=>{
-      return (
-        <>
-          <div className="max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mb-4">
-     <img src={e.image} alt="" class="w-full h-52 object-cover rounded-t-lg"/>
-     <p className='text-xl font-semibold font-sans ml-4 pt-4'>Fruit Name: {e.name}</p>
-      <div className="grid grid-cols-2 px-4 pt-3 pb-4">
-        <p className='text-lg font-semibold'>Prise: {e.prise * e.qnty} Rs.</p>
-        <button class="bg-rose-600 hover:bg-rose-500   text-white font-semibold py-2 px-4 rounded" onClick={()=>dlt(e.id)}>Remove Cart</button>
-      </div>
-      </div>
+    getdata.length == 0 ? "No data found" : 
+    
+      getdata.map((e)=>{
+        return (
+          <>
+            <div className="max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mb-4">
+       <img src={e.image} alt="" class="w-full h-52 object-cover rounded-t-lg"/>
+       <p className='text-xl font-semibold font-sans ml-4 pt-4'>Fruit Name: {e.name}</p>
+        <div className="grid grid-cols-2 px-4 pt-3 pb-4">
+          <p className='text-lg font-semibold'>Prise: {e.prise * e.qnty} Rs.</p>
+          <button class="bg-rose-600 hover:bg-rose-500   text-white font-semibold py-2 px-4 rounded" onClick={()=>dlt(e.id)}>Remove Cart</button>
+        </div>
+        </div>
+  
+        <div className='max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mt-4'>
+  <div className="grid grid-cols-2 px-4 pt-3 pb-4">
+    <p className='text-lg font-semibold'>Total items:</p>
+    <p className='text-lg font-semibold text-end'>{e.qnty}</p>
+    <p className='text-lg font-semibold'>You saved:</p>
+    <p className='text-lg font-semibold text-end'>Rs.50</p>
+    <p className='text-lg font-semibold'>Sub total price:</p>
+    <p className='text-lg font-semibold text-end'>Rs. {e.prise * e.qnty}</p>
+  </div>
+  </div>
+  
+  <div className='w-24 shadow  bg-gray-200  shadow-md rounded-lg mt-4 mb-4 ml-72'>
+  <div className="grid grid-cols-3 px-4 pt-3 pb-4">
+    <p className='text-lg font-semibold' onClick={e.qnty <=1 ? ()=>dlt(e.id) : ()=>remove(e)}>-</p>
+    <p className='text-lg font-semibold'>{e.qnty}</p>
+    <p className='text-lg font-semibold' onClick={()=>send(e)}>+</p>
+  </div>
+  </div>
+          </>
+        )
+      })
+    }
+  
 
-      <div className='max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mt-4'>
-<div className="grid grid-cols-2 px-4 pt-3 pb-4">
-  <p className='text-lg font-semibold'>Total items:</p>
-  <p className='text-lg font-semibold text-end'>{e.qnty}</p>
-  <p className='text-lg font-semibold'>You saved:</p>
-  <p className='text-lg font-semibold text-end'>Rs.50</p>
-  <p className='text-lg font-semibold'>Sub total price:</p>
-  <p className='text-lg font-semibold text-end'>Rs. {e.prise * e.qnty}</p>
-</div>
-</div>
-
-<div className='w-24 shadow  bg-gray-200  shadow-md rounded-lg mt-4 mb-4 ml-72'>
-<div className="grid grid-cols-3 px-4 pt-3 pb-4">
-  <p className='text-lg font-semibold' onClick={e.qnty <=1 ? ()=>dlt(e.id) : ()=>remove(e)}>-</p>
-  <p className='text-lg font-semibold'>{e.qnty}</p>
-  <p className='text-lg font-semibold' onClick={()=>send(e)}>+</p>
-</div>
-</div>
-        </>
-      )
-    })
-  }
 
 <div className='max-w-sm shadow  bg-gray-200  shadow-md rounded-lg mt-4'>
 
