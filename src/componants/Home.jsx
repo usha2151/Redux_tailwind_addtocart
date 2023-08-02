@@ -31,7 +31,9 @@ const remove = (item) => {
 const total = ()=>{
   let prise = 0;
   getdata.map((ele,k)=>{
-      prise = ele.prise + prise
+     const prises = ele.prise * ele.qnty + prise 
+      prise = prises - ele.coupan
+
   });
   setPrise(prise);
 };

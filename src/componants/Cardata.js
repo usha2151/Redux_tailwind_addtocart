@@ -15,6 +15,7 @@ export const services = [
     prise: 300,
     name:"Papaya",
     qnty:0,
+    coupan: 50,
     image:pic1
   },
   {
@@ -22,6 +23,7 @@ export const services = [
     prise: 350,
     name:"Kiwi",
     qnty:0,
+    coupan: 50,
     image:pic2
   },
   {
@@ -29,6 +31,7 @@ export const services = [
     prise: 200,
     name:"Apple",
     qnty:0,
+    coupan: 50,
     image:pic3
   },
   {
@@ -36,6 +39,7 @@ export const services = [
     prise: 400,
     name:"Mix-Fruits",
     qnty:0,
+    coupan: 50,
     image:pic4
   },
   {
@@ -43,6 +47,7 @@ export const services = [
     prise: 250,
     name:"Dragon",
     qnty:0,
+    coupan: 50,
     image:pic5
   },
   {
@@ -50,6 +55,7 @@ export const services = [
     prise: 160,
     name:"Pomegranate",
     qnty:0,
+    coupan: 50,
     image:pic6
   },
   {
@@ -57,6 +63,7 @@ export const services = [
     prise: 390,
     name:"Green Apple",
     qnty:0,
+    coupan: 50,
     image:pic7
   },
   {
@@ -64,6 +71,7 @@ export const services = [
     prise: 180,
     name:"Pear",
     qnty:0,
+    coupan: 50,
     image:pic8
   },
   {
@@ -71,6 +79,7 @@ export const services = [
     prise: 420,
     name:"Grapes",
     qnty:0,
+    coupan: 50,
     image:pic9
   },
   {
@@ -78,6 +87,7 @@ export const services = [
     prise: 390,
     name:"Guava",
     qnty:0,
+    coupan: 50,
     image:pic10
   },
 
