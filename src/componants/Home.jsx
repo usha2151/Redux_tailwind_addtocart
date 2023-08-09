@@ -127,7 +127,7 @@ useEffect(()=>{
 </div>
 
 
-<button class="bg-gradient-to-r mt-5 md:ml-64 ml-48 mb-6 from-blue-400 to-indigo-400 hover:from-indigo-400 hover:to-blue-400   text-white font-semibold py-2 px-4 rounded">Buy Now</button>
+<button class="bg-gradient-to-r mt-5 md:ml-24 lg:ml-64 ml-48 mb-6 from-blue-400 to-indigo-400 hover:from-indigo-400 hover:to-blue-400   text-white font-semibold py-2 px-4 rounded">Buy Now</button>
 
 </div>
   </div>
